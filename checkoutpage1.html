@@ -189,12 +189,26 @@ div.logolettering {
 div.pheader
 {
 top:25%;
-right:30%;
+right:28%;
 display:block;
 color:black;
-font-size: 30px;
+font-size: 34px;
 position:absolute;
+text-decoration: underline;
+font-weight: bold;
 }
+
+div.price
+{
+top:29%;
+right:42%;
+display:block;
+color:black;
+font-size: 18px;
+position:absolute;
+text-align: left;
+}
+
 
 div.pDescription{
 top:35%;
@@ -205,6 +219,47 @@ font-size: 15px;
 position:absolute;
 text-align: right;
 }
+
+div.pDescription2{
+top:40%;
+right:28%;
+display:block;
+color:black;
+font-size: 15px;
+position:absolute;
+text-align: right;
+}
+
+
+.cartButton {
+  background-color: #4d2ca7;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.cartButton {
+    width: 120px;
+    top:49%;
+    right:28.5%;
+    position:absolute;
+}
+
+
+.checkOutFormRetainer {
+    width: 120px;
+    top:47.5%;
+    right:37%;
+    position:absolute;
+}
+
+
 
 
 div.productpic {
@@ -308,9 +363,33 @@ footer{
 
             <div class="pheader">Sakura Drift Slap</div>
 
+            <div class="price">$7.00</div>
+        
+
          <div class="pDescription">The RB26DETT engine is a 2.6 L (2,568 cc) <br>Inline-six engine manufactured by Nissan
             </div>
 
+            <div class="pDescription2">The RB26DETT engine is a 2.6 L (2,568 cc) <br>Inline-six engine manufactured by Nissan
+            </div>
+
+            <button class="cartButton">
+                <input type="submit">
+                </button>
+
+
+            
+           <div class="checkOutFormRetainer">
+            <form action="/action_page.php">
+              
+                <label for="stickers">Choose a sticker:</label>
+                  <select id="stickers" name="sticker" size="3" multiple>
+                       <option value="3">3</option>
+                       <option value="2">2</option>
+                       <option value="1">1</option>
+                </select><br><br>
+         
+            </form>
+              
         </div>
 
 
