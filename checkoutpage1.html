@@ -165,7 +165,7 @@ h2 {
 
 
 h3{
-    height:1000px;
+    height:800px;
     width:100%;
     top:40px;
     left:0px;
@@ -188,7 +188,7 @@ div.logolettering {
 
 div.pheader
 {
-top:25%;
+top:26%;
 right:28%;
 display:block;
 color:black;
@@ -200,7 +200,7 @@ font-weight: bold;
 
 div.price
 {
-top:29%;
+top:31%;
 right:42%;
 display:block;
 color:black;
@@ -211,7 +211,7 @@ text-align: left;
 
 
 div.pDescription{
-top:35%;
+top:40%;
 right:28%;
 display:block;
 color:black;
@@ -221,7 +221,7 @@ text-align: right;
 }
 
 div.pDescription2{
-top:40%;
+top:45%;
 right:28%;
 display:block;
 color:black;
@@ -235,27 +235,35 @@ text-align: right;
   background-color: #4d2ca7;
   border: none;
   color: white;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 2px 2px;
   cursor: pointer;
 }
 
 .cartButton {
     width: 120px;
-    top:49%;
-    right:28.5%;
-    position:absolute;
+    top:480px;
+    right:530px;
+    position:relative;
+}
+
+
+.numForm{
+  width: 0px;
+    top:515px;
+    right:700px;
+    position:relative;
 }
 
 
 .checkOutFormRetainer {
-    width: 120px;
-    top:47.5%;
-    right:37%;
+    width: 0px;
+    top:0%;
+    right:0%;
     position:absolute;
 }
 
@@ -372,25 +380,25 @@ footer{
             <div class="pDescription2">The RB26DETT engine is a 2.6 L (2,568 cc) <br>Inline-six engine manufactured by Nissan
             </div>
 
-            <button class="cartButton">
-                <input type="submit">
-                </button>
+           
 
 
             
            <div class="checkOutFormRetainer">
+            
+              
             <form action="/action_page.php">
-              
-                <label for="stickers">Choose a sticker:</label>
-                  <select id="stickers" name="sticker" size="3" multiple>
-                       <option value="3">3</option>
-                       <option value="2">2</option>
-                       <option value="1">1</option>
-                </select><br><br>
-         
-            </form>
-              
-        </div>
+              <div class="numForm">
+            <input class="quantity" id="id_form-0-quantity" min="0" name="form-0-quantity" value="1" type="number">
+          </div>
+            <button class="cartButton">
+            
+              <input type="submit">
+          
+              </button>
+          </form>
+
+          </div>
 
 
 
