@@ -78,8 +78,6 @@ table {
 
 
 
-
-
  /* TOP BLACK MENU BAR   */
 
 h2 {
@@ -97,6 +95,7 @@ h2 {
   text-align: right;
 
 }
+
 
 
 
@@ -165,21 +164,21 @@ h2 {
 
 /*Background   */
 
+
 h3{
-    height:800px;
-    width:100%;
-    top:40px;
-    left:0px;
+
+  height:750px;
+    width:50%;
+    top:160px;
+    left:500px;
     background-color:white;
     position:absolute;
+    opacity: 0.5;
 }
-
-
-  
 
 /* LOGO   */
 
-div.logolettering {
+div.productcontainer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -203,11 +202,12 @@ font-weight: bold;
 
 div.price
 {
-top:31%;
+top:31.5%;
 right:42%;
 display:block;
 color:black;
 font-size: 18px;
+font-weight:bold;
 position:absolute;
 text-align: left;
 }
@@ -215,12 +215,14 @@ text-align: left;
 
 
 /* top description   */
+
 div.pDescription{
 top:38%;
 right:34%;
 display:block;
 color:black;
-font-size: 15px;
+font-size: 17px;
+font-weight:bold;
 position:absolute;
 text-align:left;
 float:left;
@@ -303,21 +305,37 @@ div.desc {
   text-align: center;
 }
 
+
+
+
+
+
+
+
+
+
+
+body {
+  background: url(checkoutimages/sakura.png);
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 footer{
   background-color:grey;
-             height:100px;
+             height:50px;
              width:100%;
-             bottom:0px;
-             left:0px;
+             top:875px;
+             left:125px;
              padding:0px;
              margin:0px;
              border:0px;
              position:absolute;
              display:inline-block;
 }
-
-
-
 
            </style>
     </head>
@@ -357,10 +375,10 @@ footer{
     
         
     <!–– LOGO FONT LETTERING ––>
+    <h3></h3>
     
-    <h3>
-          <div class="logolettering">
-            <img src="checkoutimages/logocheckout.png" alt="DriftFail!" width="100%" height="auto">
+          <div class="productcontainer">
+          
       
            <!–– PRODUCT PICTURE/DESCRIPTION BOX ––>
     <div class="productarea">
@@ -374,7 +392,7 @@ footer{
                      
                        <div class="price">$7.00</div>
         
-
+                      
    
 
 
@@ -413,6 +431,6 @@ footer{
         <p>Posted by: Andrae Torres</p>
          <p>Contact information: <a href="mailto:boostedrb240sx@gmail.com">boostedrb240sx@gmail.com</a></p>
         </footer>
-     </h3>
+      
   </body>
 </html>
