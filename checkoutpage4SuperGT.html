@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    
+    
+       <title>Imperial Touge</title>
+     
+       <script src="https://kit.fontawesome.com/044137398e.js" crossorigin="anonymous"></script>
+         
+          <style>
+@font-face{
+  src:url('fonts/plateia bold.ttf');
+font-family:plateia;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+           #test {
+	background-image:url(https://photos.app.goo.gl/TePmw5ZfWMjUG7x57);
+	display:block;
+           height:90%;
+           width:90%;
+           text-indent:-9999px;
+}
+
+
+
+
+
+
+
+ /* TOP BLACK MENU BAR   */
+
+h2 {
+  height:35px;
+  width:100%;
+  z-index:1;
+  display: inline-block;
+  list-style-type:none;
+  padding:0px;
+  top:0px;
+  right:0px;
+  position:fixed;
+  color:red;
+  background-color:black;
+  text-align: right;
+
+}
+
+
+
+
+.dropbtn {
+  color:red;
+  padding:0px;
+  font-size:20px;
+  border: none;
+  cursor:left;
+  background: rgba(253, 253, 253, 0);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  min-height:200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: left;
+  right: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 20px 30px;
+  text-decoration: none;
+  display:inline-block;
+  text-align: left;
+  min-width: 140px;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(100, 100, 96)
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  position: absolute;
+  width: 200px;
+}
+
+.dropdown:hover .dropbtn {
+  background-color:#ffffff 0.8;
+}
+
+
+.cartbutton
+{
+  color: black;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: right;
+  font-size:20px;
+  top:0;
+}
+
+
+
+/*Background   */
+
+
+h3{
+
+  height:750px;
+    width:50%;
+    top:160px;
+    left:500px;
+    background-color:white;
+    position:absolute;
+    opacity: 0.5;
+}
+
+/* LOGO   */
+
+div.productcontainer {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+/*  SAKURA DRIFT SLAP   */
+
+div.pheader
+{
+top:26%;
+right:28%;
+display:block;
+color:black;
+font-size: 34px;
+position:absolute;
+text-decoration: underline;
+text-align:center;
+font-weight: bold;
+}
+
+div.price
+{
+top:70%;
+right:43.5%;
+display:block;
+color:black;
+font-size: 18px;
+font-weight:bold;
+position:absolute;
+text-align: left;
+}
+
+
+
+/* top description   */
+
+div.pDescription{
+top:38%;
+right:34%;
+display:block;
+color:black;
+font-size: 17px;
+font-weight:bold;
+position:absolute;
+text-align:left;
+float:left;
+}
+
+div.pDescription2{
+top:54%;
+right:28%;
+display:block;
+color:black;
+font-size: 15px;
+position:absolute;
+text-align: left;
+}
+
+.cartButton {
+  background-color: #4d2ca7;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+
+.cartButton {
+    width: 120px;
+    top:480px;
+    right:530px;
+    position:relative;
+}
+
+
+.numForm{
+  width: 0px;
+    top:515px;
+    right:700px;
+    position:relative;
+}
+
+
+.checkOutFormRetainer {
+    width: 0px;
+    top:0%;
+    right:0%;
+    position:absolute;
+}
+
+
+/* PRODUCT PIC   */
+
+div.productpic {
+  margin: 98px;
+  border: 1px solid #ccc;
+  position:inline-block;
+  float:left;
+  width: 240px;
+  position: absolute;
+  left: 30%;
+  top: 150px;
+}
+
+
+
+div.productpic:hover {
+  border: 1px solid #777;
+}
+
+div.productpic img {
+  width: 100%;
+  height: auto;
+  left:600px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+body {
+  background: url(checkoutimages/supergtexport.png);
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+footer{
+  background-color:grey;
+             height:50px;
+             width:100%;
+             top:875px;
+             left:125px;
+             padding:0px;
+             margin:0px;
+             border:0px;
+             position:absolute;
+             display:inline-block;
+}
+
+           </style>
+    </head>
+
+
+
+
+
+
+<body>
+
+
+  <!–– TOP BLACK MENU BAR ––>
+    <h2>
+      
+      <ul style="list-style-type:none;">
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn"><i class="fas fa-caret-square-down">Menu</i></button>
+            <div class="dropdown-content">
+            <a href="#">Slap Stickers</a>
+            <a href="#">Window Banners</a>
+            <a href="#">Accessories</a>
+            <a href="#">Auto</a>
+          </div>
+        </div>
+        
+        <div class="cartbutton">
+            <a href="page1.html";> <i class="fas fa-cart-arrow-down">Cart</i>
+            </div>
+         
+        </li>
+       </ul>
+      </ul>
+    </h2>
+
+    
+        
+    <!–– LOGO FONT LETTERING ––>
+    <h3></h3>
+    
+          <div class="productcontainer">
+          
+      
+           <!–– PRODUCT PICTURE/DESCRIPTION BOX ––>
+    <div class="productarea">
+       <div class="productpic">
+          <img src="pg2images/samplepic.png" alt="DriftFail!" width="600" height="400">
+            </a>
+              <div class="desc">Will be updating soon!</div>
+            </div>
+              
+                 <div class="pheader">R32 JGTC Sponsor <br>Livery</div>
+                     
+                       <div class="price">$7.00</div>
+        
+                      
+   
+
+
+  <!–– STICKER DESCRIPTION AREA ––>
+
+     <div class="pDescription"><br>
+          -UV Resistant<br>
+          -Fade Resistant<br>
+          -Gloss laminate<br>
+          -Water Proof
+            </div>
+
+            <div class="pDescription2">The RB26DETT engine is a 2.6 L (2,568 cc) <br>Inline-six engine manufactured by Nissan
+            </div>
+
+           
+
+
+    <!–– AMOUNT SELECTOR AND "ADD TO CART" BUTTON ––>
+           <div class="checkOutFormRetainer">
+            
+            <form action="/action_page.php">
+              <div class="numForm">
+                 <input class="quantity" id="id_form-0-quantity" min="0" name="form-0-quantity" value="1" type="number">
+             </div>
+                     <button class="cartButton">
+                        <input type="submit">
+                  </button>
+               </form>
+            </div>
+
+
+
+
+    <footer>
+        <p>Posted by: Andrae Torres</p>
+         <p>Contact information: <a href="mailto:boostedrb240sx@gmail.com">boostedrb240sx@gmail.com</a></p>
+        </footer>
+      
+  </body>
+</html>
