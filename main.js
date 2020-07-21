@@ -20,8 +20,10 @@ let toggleNav = function() {
      }
 
      else if (toggleNavStatus === true) {
-        getSidebar.style.width = "50px";
+        getSidebarUl.style.visibility = "hidden";
+        getSidebar.style.width = "40px";
         getSidebarTitle.style.opacity = "0";
+        
 
         let arrayLength = getSidebarLinks.length;
         for (let i = 0; i < arrayLength; i++) {
