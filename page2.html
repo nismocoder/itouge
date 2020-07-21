@@ -75,13 +75,10 @@ table {
 
 
 
-
-
-
 body {
-  background: url(pg2images/3skylinesFujicrop.png);
+  background-image: url(pg2images/3skylinesFujicrop.png);
   height:500px;
-  background-position: center;
+  background-position: center 24px;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -89,6 +86,106 @@ body {
 
 
 
+.nav-main {
+  width: 100%;
+  height: 50px;
+  top:0;
+  position:fixed;
+  background-color: #fff;
+  display:flex;
+  flex-wrap: wrap;
+  z-index:1000;
+}
+
+.btn-toggle-nav {
+  width:50px;
+  height:100%;
+  background-color: rgb(199, 188, 188);
+  background-image: url("img/turbovector.png");
+  background-repeat: no-repeat;
+  background-size:55%;
+  background-position:center;
+  cursor:pointer;
+}
+
+.btn-toggle-nav:hover {
+  opacity: 0.3;
+}
+
+.nav-main ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 15px;
+}
+
+.nav-main ul li {
+list-style: none;
+line-height: 50px;
+}
+
+.nav-main ul li a {
+display: block;
+height: 100%;
+padding: 0 10px;
+text-transform: uppercase;
+text-decoration: none;
+color:cadetblue;
+font-family: arial;
+font-size: 16px;
+}
+
+.nav-sidebar ul li span
+ {text-indent: 60px;}
+
+
+.nav-sidebar {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 40px;
+height: calc(100vh - 50px);
+padding: 0 5px;
+background-color: rgba(190, 132, 116, 0.096);
+z-index: 1000;
+transition: all 0.3s ease-in-out;
+}
+
+.nav-sidebar ul {
+padding-top: 15px;
+overflow: hidden;
+visibility: hidden;
+}
+
+.nav-sidebar ul li {
+line-height: 50px;
+list-style: none;
+}
+
+.nav-sidebar ul li span, .nav-sidebar ul li a {
+display: block;
+height: 60px;
+padding: 0 10px;
+text-decoration: none;
+text-transform: uppercase;
+color: #fff;
+font-family: arial;
+font-size: 16px;
+white-space: nowrap;
+opacity:0;
+transition: all 0.3s ease-in-out;
+}
+
+.nav-sidebar ul li, .nav-sidebar ul li a:hover {
+background-color: #227;
+}
+
+
+
+
+
+
+
+/*
 
 h2 {
   height:35px;
@@ -103,7 +200,6 @@ h2 {
   color:red;
   background-color:black;
   text-align: right;
-
 }
 
 
@@ -144,7 +240,7 @@ h2 {
 }
 
 .dropdown-content a:hover {
-  background-color: rgb(100, 100, 96)
+  background-color: rgb(100, 100, 96);
 }
 
 .dropdown:hover .dropdown-content {
@@ -169,13 +265,13 @@ h2 {
   top:0;
 }
 
-
+*/
 
 
 h3{
     height:3000px;
     width:100%;
-    top:640px;
+    top:660px;
     left:0px;
     background-color:white;
     position:absolute;
@@ -214,12 +310,9 @@ div.contentright{
   float:right;
   margin-right:18%;
   top:100px;
-  
 }
 
-div.gallery:hover {
 
-}
 
 div.gallery img {
   width: 100%;
@@ -245,26 +338,12 @@ footer{
 }
 
 
-
-
-
-
-
-
            </style>
     </head>
-
-
-
-
-
 <body>
 
 
-
-<h2>
-  
-  <ul style="list-style-type:none;">
+<!--     <ul style="list-style-type:none;">
     <li>
       <div class="dropdown">
         <button class="dropbtn"><i class="fas fa-caret-square-down">Menu</i></button>
@@ -282,20 +361,51 @@ footer{
      
     </li>
    </ul>
-  </ul>
-</h2>
+  </ul>       -->
+
+
+
+
+
+
+
+
+
+  <nav class="nav-main">
+    <div class="btn-toggle-nav" onclick="toggleNav()"></div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">About US</a></li>
+      <li><a href="#">Gallery</a></li>
+    </ul>
+  </nav>
+
+<aside class="nav-sidebar">
+  <ul>
+    <li><span>Royal Items:</span></li>
+    <li><a href="#">Slap Stickers</a></li>
+    <li><a href="#">Window Banners</a></li>
+    <li><a href="#">Accessories</a></li>
+    <li><a href="#">Auto Acc.</a></li>
+    
+ </ul>
+</aside>
+
+
+
+
+
+
 
 <h3>
   
- 
   <div class="slapheader">
   <p>
     Slap Stickers
   </p>
  </div>
 
- 
-  
   <div class="contentleft">
 
       <div class="gallery">
@@ -418,6 +528,7 @@ footer{
 
 
               </body>
+              <script src="main.js"></script>
 </html>
 
 
