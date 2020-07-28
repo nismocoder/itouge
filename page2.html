@@ -2,220 +2,211 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    
     <title>Imperial Touge</title>
-    <link rel="stylesheet" href="css/reset.css" type="text/css">
+
     <script src="https://kit.fontawesome.com/044137398e.js" crossorigin="anonymous"></script>
-    
+ 
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+  
 
-    
-       
- <style>
 
-/*<link rel="stylesheet" href="css/style.css" type="text/css">*/
+  <style>
+    body {
+        background-image: url(pg2images/3skylinesFujicrop.png);
+        height:500px;
+        background-position: center 23px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      
+      
+      /* TOP MENU BAR   */
 
-  
-body {
-    background-image: url(pg2images/3skylinesFujicrop.png);
-    height:500px;
-    background-position: center 24px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  
-  
-  
-  .nav-main {
-    width: 100%;
-    height: 50px;
-    top:0;
-    position:fixed;
-    background-color: #fff;
-    display:flex;
-    flex-wrap: wrap;
-    z-index:1000;
-  }
-  
-  .btn-toggle-nav {
-    width:46px;
-    height:100%;
-    background-color: rgb(199, 188, 188);
-    background-image: url("img/turbovector.png");
-    background-repeat: no-repeat;
-    background-size:55%;
-    background-position:center;
-    cursor:pointer;
-  }
-  
-  .btn-toggle-nav:hover {
-    opacity: 0.3;
-  }
-  
-  .nav-main ul {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 15px;
-  }
-  
-  .nav-main ul li {
-  list-style: none;
-  line-height: 50px;
-  }
-  
-  .nav-main ul li a {
-  display: block;
-  height: 100%;
-  padding: 0 10px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color:cadetblue;
-  font-family: arial;
-  font-size: 16px;
-  }
-  
-  .nav-sidebar ul li span
-   {text-indent: 65px;}
-  
-  
-  .nav-sidebar {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 40px;
-  height: calc(100vh - 50px);
-  padding: 0 5px;
-  background-color: rgba(190, 132, 116, 0.096);
-  z-index: 1000;
-  transition: all 0.3s ease-in-out;
-  }
-  
-  .nav-sidebar ul {
-  padding-top: 15px;
-  overflow: hidden;
-  visibility: hidden;
-  }
-  
-  .nav-sidebar ul li {
-  line-height: 50px;
-  list-style: none;
-  }
-  
-  .nav-sidebar ul li span, .nav-sidebar ul li a {
-  display: block;
-  height: 60px;
-  padding: 0 10px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #fff;
-  font-family: arial;
-  font-size: 16px;
-  white-space: nowrap;
-  opacity:0;
-  transition: all 0.3s ease-in-out;
-  }
-  
-  .nav-sidebar ul li, .nav-sidebar ul li a:hover {
-  background-color: #227;
-  }
-  
-  
-  
-  
-  
-  
-  
-  h3{
-      height:3000px;
-      width:100%;
-      top:660px;
-      left:0px;
-      background-color:white;
-      position:absolute;
-  }
-  
-  div.slapheader{
-    position: absolute;
-    left: 42.5%;
-    top: 15px;
-    color:#ff0000;
-  }
-  
+      .nav-main {
+        width: 100%;
+        height: 50px;
+        top:0;
+        position:fixed;
+        background-color: #fff;
+        display:flex;
+        flex-wrap: wrap;
+        z-index:1000;
+      }
+      
+      .btn-toggle-nav {
+        width:46px;
+        height:100%;
+        background-color: rgb(199, 188, 188);
+        background-image: url("img/turbovector.png");
+        background-repeat: no-repeat;
+        background-size:55%;
+        background-position:center;
+        cursor:pointer;
+      }
+      
+      .btn-toggle-nav:hover {
+        opacity: 0.3;
+      }
+      
+      .nav-main ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 15px;
+      }
+      
+      .nav-main ul li {
+      list-style: none;
+      line-height: 50px;
+      }
+      
+      .nav-main ul li a {
+      display: block;
+      height: 100%;
+      padding: 0 10px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color:#4954bb;
+      font-family: arial;
+      font-size: 16px;
+      }
+      
+      .nav-sidebar ul li span
+       {text-indent: 65px;}
+      
+      
+      .nav-sidebar {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 36px;
+      height: calc(97.6vh - 50px);
+      padding: 0 5px;
+      background-color: rgba(190, 132, 116, 0.096);
+      z-index: 1000;
+      transition: all 0.3s ease-in-out;
+      }
+      
+      .nav-sidebar ul {
+      padding-top: 15px;
+      overflow: hidden;
+      visibility: hidden;
+      }
+      
+      .nav-sidebar ul li {
+      line-height: 50px;
+      list-style: none;
+      }
+      
+      .nav-sidebar ul li span, .nav-sidebar ul li a {
+      display: block;
+      height: 60px;
+      padding: 0 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      font-family: arial;
+      font-size: 16px;
+      white-space: nowrap;
+      opacity:0;
+      transition: all 0.3s ease-in-out;
+      }
+      
+      .nav-sidebar ul li, .nav-sidebar ul li a:hover {
+      background-color: #227;
+      }
+      
+      
+      
+      
+      
+      
+      
+      h3{
+          height:3000px;
+          width:100%;
+          top:660px;
+          left:0px;
+          background-color:white;
+          position:absolute;
+      }
+      
+      div.slapheader{
+        position: absolute;
+        left: 42.5%;
+        top: 15px;
+        color:#4954bb;
+      }
+      
+        
+      div.slapheader {
+        font-family: Impact, sans-serif;
+        font-size: 40px;
+        text-decoration: underline;
+      }
+      
+      
+      div.gallery {
+        
+        position:inline;
+        width: 360px;
+        padding-left:8.5%;
+      }
+      
+      div.contentleft{
+        float:left;
+        margin-left:12%;
+      }
+      
+      
+      div.contentright{
+        position:relative;
+        float:right;
+        margin-right:18%;
+        top:100px;
+      }
+      
+      
+      
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+      
     
-  div.slapheader {
-    font-family: Impact, sans-serif;
-    font-size: 40px;
-    text-decoration: underline;
-  }
-  
-  
-  div.gallery {
     
-    position:inline;
-    width: 360px;
-    padding-left:8.5%;
-  }
-  
-  div.contentleft{
-    float:left;
-    margin-left:12%;
-  }
-  
-  
-  div.contentright{
-    position:relative;
-    float:right;
-    margin-right:18%;
-    top:100px;
-  }
-  
-  
-  
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
-  }
-  
-  footer{
-    background-color:grey;
-               height:50px;
-               width:100%;
-               bottom:0px;
-               left:0px;
-               padding:0px;
-               margin:0px;
-               border:0px;
-               position:absolute;
-               display:inline-block;
-  }
-
-  
-  
-       </style>
-   
+    
+      div.desc {
+        padding: 15px;
+        text-align: center;
+      }
+      
+      footer{
+        background-color:grey;
+                   height:50px;
+                   width:100%;
+                   bottom:0px;
+                   left:0px;
+                   padding:0px;
+                   margin:0px;
+                   border:0px;
+                   position:absolute;
+                   display:inline-block;
+      }
+    
+      
+    </style>
     </head>
 <body>
-
-
-
-
-
-
-
-
-
 
   <nav class="nav-main">
     <div class="btn-toggle-nav" onclick="toggleNav()"></div>
     <ul>
       <li><a href="#">Home</a></li>
-      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
       <li><a href="#">About US</a></li>
-      <li><a href="#">Gallery</a></li>
+      <li><a href="#">FAQ</a></li>
     </ul>
   </nav>
 
@@ -247,12 +238,13 @@ body {
   <div class="contentleft">
 
       <div class="gallery">
+       
         <a target="_blank" href="checkoutpage2tougewinner.html">
           <img src="checkoutimages/tougewinner/tougeWinnerPreviewpg2.png" alt="Drift Fail!" width="600" height="400">
         </a>
         <div class="desc">TOUGE WINNER! <br> 180sx</div>
       </div>
-
+    
 
 
             

@@ -9,9 +9,9 @@ let toggleNav = function() {
      if (toggleNavStatus === false) {
          getSidebarUl.style.visibility = "visible";
          getSidebar.style.width = "272px";
-         getSidebarTitle.style.opacity = "1";
+         getSidebarTitle.style.opacity = "0.4";
 
-         let arrayLength = getSidebarLinks.length;
+         let  = getSidebarLinks.length;
          for (let i = 0; i < arrayLength; i++) {
              getSidebarLinks[i].style.opacity = "1";
          }
@@ -20,17 +20,15 @@ let toggleNav = function() {
      }
 
      else if (toggleNavStatus === true) {
-        getSidebarUl.style.visibility = "hidden";
-        getSidebar.style.width = "36px";
-        getSidebarTitle.style.opacity = "0";
-        
+        getSidebar.style.width = "50px";
+        getSidebarTitle.style.opacity = "1";
 
         let arrayLength = getSidebarLinks.length;
-        for (let i = 0; i < arrayLength; i++) {
+        for (let i = 0; i < arrayLength; i++){
             getSidebarLinks[i].style.opacity = "0";
         }
 
-     
+        getSidebarUl.style.visibility = "hidden";
 
         toggleNavStatus = false;
     }

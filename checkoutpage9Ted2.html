@@ -8,157 +8,116 @@
      
        <script src="https://kit.fontawesome.com/044137398e.js" crossorigin="anonymous"></script>
          
+       <link rel="stylesheet" href="css/reset.css" type="text/css">
+
+
           <style>
-@font-face{
-  src:url('fonts/plateia bold.ttf');
-font-family:plateia;
-}
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
 body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  background: url(checkoutimages/ted/1.jpg);
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 
 
-           #test {
-	background-image:url(https://photos.app.goo.gl/TePmw5ZfWMjUG7x57);
-	display:block;
-           height:90%;
-           width:90%;
-           text-indent:-9999px;
-}
+ /* TOP MENU BAR   */
 
-
-
-
-
-
-
- /* TOP BLACK MENU BAR   */
-
-h2 {
-  height:35px;
-  width:100%;
-  z-index:1;
-  display: inline-block;
-  list-style-type:none;
-  padding:0px;
-  top:0px;
-  right:0px;
-  position:fixed;
-  color:red;
-  background-color:black;
-  text-align: right;
-
-}
-
-
-
-
-.dropbtn {
-  color:red;
-  padding:0px;
-  font-size:20px;
-  border: none;
-  cursor:left;
-  background: rgba(253, 253, 253, 0);
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 200px;
-  min-height:200px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  text-align: left;
-  right: 0;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 20px 30px;
-  text-decoration: none;
-  display:inline-block;
-  text-align: left;
-  min-width: 140px;
-}
-
-.dropdown-content a:hover {
-  background-color: rgb(100, 100, 96)
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-  position: absolute;
-  width: 200px;
-}
-
-.dropdown:hover .dropbtn {
-  background-color:#ffffff 0.8;
-}
-
-
-.cartbutton
-{
-  color: black;
-  padding: 8px 12px;
-  text-decoration: none;
-  display: inline-block;
-  text-align: right;
-  font-size:20px;
-  top:0;
-}
+ .nav-main {
+        width: 100%;
+        height: 50px;
+        top:0;
+        position:fixed;
+        background-color: rgb(126, 108, 108);
+        display:flex;
+        flex-wrap: wrap;
+        z-index:1000;
+      }
+      
+      .btn-toggle-nav {
+        width:46px;
+        height:100%;
+        background-color: rgb(199, 188, 188);
+        background-image: url("img/turbovector.png");
+        background-repeat: no-repeat;
+        background-size:55%;
+        background-position:center;
+        cursor:pointer;
+      }
+      
+      .btn-toggle-nav:hover {
+        opacity: 0.3;
+      }
+      
+      .nav-main ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 15px;
+      }
+      
+      .nav-main ul li {
+      list-style: none;
+      line-height: 50px;
+      }
+      
+      .nav-main ul li a {
+      display: block;
+      height: 100%;
+      padding: 0 10px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color:#fff;
+      font-family: arial;
+      font-size: 16px;
+      }
+      
+      .nav-sidebar ul li span
+       {text-indent: 65px;}
+      
+      
+      .nav-sidebar {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 36px;
+      height: calc(97.6vh - 50px);
+      padding: 0 5px;
+      background-color: rgba(252, 248, 247, 0.589);
+      z-index: 1000;
+      transition: all 0.3s ease-in-out;
+      }
+      
+      .nav-sidebar ul {
+      padding-top: 15px;
+      overflow: hidden;
+      visibility: hidden;
+      }
+      
+      .nav-sidebar ul li {
+      line-height: 50px;
+      list-style: none;
+      }
+      
+      .nav-sidebar ul li span, .nav-sidebar ul li a {
+      display: block;
+      height: 60px;
+      padding: 0 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      font-family: arial;
+      font-size: 16px;
+      white-space: nowrap;
+      opacity:0;
+      transition: all 0.3s ease-in-out;
+      }
+      
+      .nav-sidebar ul li, .nav-sidebar ul li a:hover {
+      background-color: #227;
+      }
 
 
 
@@ -311,20 +270,6 @@ div.desc {
 
 
 
-
-
-
-
-
-body {
-  background: url(checkoutimages/ted/1.jpg);
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 footer{
   background-color:grey;
              height:50px;
@@ -349,39 +294,37 @@ footer{
 <body>
 
 
-  <!–– TOP BLACK MENU BAR ––>
-    <h2>
-      
-      <ul style="list-style-type:none;">
-        <li>
-          <div class="dropdown">
-            <button class="dropbtn"><i class="fas fa-caret-square-down">Menu</i></button>
-            <div class="dropdown-content">
-            <a href="#">Slap Stickers</a>
-            <a href="#">Window Banners</a>
-            <a href="#">Accessories</a>
-            <a href="#">Auto</a>
-          </div>
-        </div>
-        
-        <div class="cartbutton">
-            <a href="page1.html";> <i class="fas fa-cart-arrow-down">Cart</i>
-            </div>
-         
-        </li>
-       </ul>
-      </ul>
-    </h2>
+           <!--TOP MENU BAR-->
+    <nav class="nav-main">
+    <div class="btn-toggle-nav" onclick="toggleNav()"></div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">About US</a></li>
+      <li><a href="#">FAQ</a></li>
+    </ul>
+  </nav>
+
+<aside class="nav-sidebar">
+  <ul>
+    <li><span>Royal Items:</span></li>
+    <li><a href="#">Slap Stickers</a></li>
+    <li><a href="#">Window Banners</a></li>
+    <li><a href="#">Accessories</a></li>
+    <li><a href="#">Auto Accessories</a></li>
+    
+ </ul>
+</aside>
 
     
         
-    <!–– LOGO FONT LETTERING ––>
+          <!--LOGO FONT LETTERING -->
     <h3></h3>
     
           <div class="productcontainer">
           
       
-           <!–– PRODUCT PICTURE/DESCRIPTION BOX ––>
+           <!--PRODUCT PICTURE/DESCRIPTION BOX -->
     <div class="productarea">
        <div class="productpic">
           <img src="checkoutimages/ted/tedcutCheckoutprev.png" alt="DriftFail!" width="600" height="400">
@@ -397,7 +340,7 @@ footer{
    
 
 
-  <!–– STICKER DESCRIPTION AREA ––>
+             <!--STICKER DESCRIPTION AREA -->
 
      <div class="pDescription"><br>
           -UV Resistant<br>
@@ -412,7 +355,7 @@ footer{
            
 
 
-    <!–– AMOUNT SELECTOR AND "ADD TO CART" BUTTON ––>
+                <!--AMOUNT SELECTOR AND "ADD TO CART" BUTTON -->
            <div class="checkOutFormRetainer">
             
             <form action="/action_page.php">
@@ -434,4 +377,5 @@ footer{
         </footer>
       
   </body>
+  <script src="main.js"></script>
 </html>
